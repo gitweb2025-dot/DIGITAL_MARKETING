@@ -12,7 +12,7 @@ loaderTL
   })
   .to("#loader", {
     clipPath: "inset(0 0 100% 0)",
-    duration: 2.8,
+    duration: 1.5,
     ease: "power3.inOut",
     delay: 0.3,
   })
@@ -22,17 +22,20 @@ loaderTL
     startHeroIfReady();
   });
 
-
 function startHeroIfReady() {
   if (!heroTL.isActive() && loaderFinished) {
     heroTL.play();
   }
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   // If loader already finished before DOM was ready
   startHeroIfReady();
+});
+
+//REFRESH
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
 });
 
 // NAVBAR GSAP
@@ -50,7 +53,6 @@ const mobileLinks = document.querySelectorAll(".mobile-link");
 const mobileSubmenus = document.querySelectorAll(".mobile-submenu");
 const mobileToggles = document.querySelectorAll(".mobile-sub-toggle");
 
-
 // Desktop dropdowns
 gsap.set(desktopSubmenus, {
   autoAlpha: 0,
@@ -67,7 +69,6 @@ gsap.set(mobileSubmenus, {
   autoAlpha: 0,
   overflow: "hidden",
 });
-
 
 desktopToggles.forEach((toggle) => {
   toggle.addEventListener("click", (e) => {
@@ -120,7 +121,6 @@ document.addEventListener("click", () => {
   }
 });
 
-
 hamburger.addEventListener("click", () => {
   resetMobileSubmenus();
 
@@ -154,7 +154,6 @@ function closeMobileMenu() {
     },
   });
 }
-
 
 mobileToggles.forEach((toggle) => {
   toggle.addEventListener("click", (e) => {
@@ -658,18 +657,18 @@ gsap.from(".footer-brand, .footer-col", {
 
 // LENIS JS
 
-const lenis = new Lenis({
-  duration: 2, // Smoothness (1–1.5 recommended)
-  // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Natural ease
-  easing: (t) => 1 - Math.pow(1 - t, 4),
-  smoothWheel: true, // Mouse wheel smoothing
-  smoothTouch: false, // Disable on mobile (better UX)
-});
+// Initialize a new Lenis instance for smooth scrolling
+const lenis = new Lenis();
 
-lenis.on("scroll", ScrollTrigger.update);
+// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+lenis.on('scroll', ScrollTrigger.update);
 
+// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+// This ensures Lenis's smooth scroll animation updates on each GSAP tick
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000); // Convert time from seconds to milliseconds
 });
 
+// Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
+

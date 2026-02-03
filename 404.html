@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>
-      Stackly Digital Marketing Agency | SEO, PPC & Growth Marketing
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly Digital Marketing Agency - 404</title>
 
     <meta
       name="description"
@@ -57,85 +56,106 @@
       rel="stylesheet"
     />
 
-    <!-- CSS  -->
-     <link rel="stylesheet" href="./dist/output.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
 
+    <!-- 404 CSS -->
     <style>
-      /* ONLY hover effects */
       .primary-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
-      }
-
-      .secondary-btn:hover {
-        transform: translateX(4px);
+        box-shadow: 0 18px 40px hsla(25, 95%, 53%, 0.429);
       }
     </style>
   </head>
-
-  <body
-    class="bg-[#0b0f1a] text-white min-h-screen flex items-center justify-center"
-  >
-    <section class="error-section w-full overflow-hidden">
+  <body class="bg-black text-white overflow-hidden">
+    <!-- 404 -->
+    <section
+      class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden"
+    >
+      <!-- BIG 404 BACKGROUND -->
       <div
-        class="max-w-7xl mx-auto min-h-screen  px-6 gap-20 flex items-center justify-center" 
+        class="absolute inset-0 flex items-center justify-center pointer-events-none"
       >
-        <!-- LEFT CONTENT -->
-        <div class="error-content space-y-8 w-full text-center">
-          <span class="uppercase tracking-widest text-sm text-primary">
-            Error 404
-          </span>
+        <span
+          class="text-[22rem] font-black text-white/15 leading-none error-bg"
+        >
+          404
+        </span>
+      </div>
 
-          <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
-            Page Not<br />Found
-          </h1>
+      <!-- CONTENT -->
+      <div class="relative z-10 max-w-3xl text-center error-root">
+        <span class="text-primary uppercase tracking-widest text-sm error-tag">
+          404 Error
+        </span>
 
-          <p class="text-gray-400 leading-relaxed">
-            The page you’re looking for doesn’t exist or has been moved. Let’s
-            get you back on track.
-          </p>
+        <h1
+          class="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mt-6 error-title"
+        >
+          Page Not Found.
+        </h1>
 
-          <div class="flex flex-wrap justify-center items-center gap-6">
-            <a
-              href="/"
-              class="primary-btn bg-primary text-black font-semibold px-8 py-4 rounded-full transition-all"
-            >
-              Go to Homepage
-            </a>
-          </div>
-        </div>
+        <p class="text-zinc-400 mt-6 max-w-xl mx-auto error-text">
+          The page you’re looking for doesn’t exist, was moved, or is
+          temporarily unavailable.
+        </p>
 
-        <!-- RIGHT VISUAL -->
-        <div class="error-visual absolute inset-0 flex items-center justify-center ">
-          <div
-            class="error-glow absolute w-72 h-72 bg-primary/20 rounded-full blur-3xl"
-          ></div>
-
-          <div
-            class="error-code text-[160px] font-extrabold text-white/5 select-none"
+        <div class="flex gap-6 justify-center text-center mt-12 error-actions">
+          <a
+            href="./index.html"
+            class="primary-btn bg-primary text-black px-10 py-4 rounded-full font-medium inline-flex items-center gap-3 transition"
           >
-            404
-          </div>
+            Back to Home
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- 404 GSAP -->
     <script>
-      // GSAP ENTRY (clean, SaaS-level)
-      gsap.from(".error-content > *", {
-        y: 40,
-        opacity: 0,
+      // Initial states
+      gsap.set(".error-root", { opacity: 0, y: 40 });
+      gsap.set(".error-bg", { opacity: 0, scale: 0.9 });
+
+      // Main entrance
+      gsap.to(".error-root", {
+        opacity: 1,
+        y: 0,
         duration: 1,
-        stagger: 0.12,
         ease: "power3.out",
+        delay: 0.2,
       });
 
-      gsap.from(".error-code", {
-        scale: 0.8,
-        opacity: 0,
+      gsap.to(".error-bg", {
+        opacity: 1,
+        scale: 1,
         duration: 1.2,
         ease: "power3.out",
+        delay: 0.1,
       });
+
+      // Floating 404
+      gsap.to(".error-bg", {
+        y: -20,
+        duration: 4,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+      });
+
+      // Stagger inner elements
+      gsap.from(
+        [".error-tag", ".error-title", ".error-text", ".error-actions"],
+        {
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "sine.inOut",
+          delay: 0.5,
+        },
+      );
     </script>
   </body>
 </html>
