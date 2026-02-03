@@ -1,0 +1,1682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Stackly Digital Marketing Agency | SEO, PPC & Growth Marketing
+    </title>
+
+    <meta
+      name="description"
+      content="Results-driven digital marketing agency specializing in SEO, PPC, social media, and conversion optimization. Grow traffic, leads, and revenue."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Stackly" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Stackly Digital Marketing Agency | SEO, PPC & Growth Marketing"
+    />
+    <meta
+      property="og:description"
+      content="Results-driven digital marketing agency specializing in SEO, PPC, social media, and conversion optimization. Grow traffic, leads, and revenue."
+    />
+    <meta property="og:site_name" content="Stackly" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-fourthery overflow-x-hidden">
+    <!-- LOADER -->
+    <div id="loader" class="fixed inset-0 z-999 bg-white overflow-hidden">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative w-[320px]">
+          <!-- UI shell -->
+          <div class="space-y-4">
+            <div class="h-4 w-32 rounded bg-gray-100"></div>
+            <div class="h-10 w-full rounded-lg bg-gray-100"></div>
+            <div class="h-10 w-full rounded-lg bg-gray-100"></div>
+            <div class="h-10 w-3/4 rounded-lg bg-gray-100"></div>
+          </div>
+
+          <!-- Brand (secondary, not dominant) -->
+          <div
+            class="absolute -bottom-12 left-0 font-medium text-gray-400 text-2xl"
+          >
+            Initializing <span class="text-primary">Stackly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div>
+      <!-- NAVBAR -->
+      <header class="site-header fixed top-0 left-0 w-full bg-white z-50">
+        <div
+          class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        >
+          <!-- LOGO -->
+          <a href="./index.html" class="logo flex items-center gap-3">
+            <span class="text-xl font-semibold text-primary">STACKLY</span>
+          </a>
+
+          <!-- DESKTOP NAV -->
+          <nav class="nav-desktop hidden lg:flex items-center gap-10">
+            <!-- HOME -->
+            <div class="nav-item has-sub relative">
+              <div class="flex items-center gap-0.5">
+                <a
+                  href="./index.html"
+                  class="nav-link relative inline-block px-1 py-2 transition-colors duration-200 hover:text-white after:absolute after:left-1/2 after:-bottom-0.5 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                  >Home</a
+                >
+                <button class="submenu-toggle" aria-label="Open Home submenu">
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </div>
+
+              <div
+                class="submenu absolute top-full left-0 mt-4 bg-white shadow-lg rounded-md w-48"
+              >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Home One</a
+                >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Home Two</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="nav-link">Pages</a>
+
+            <a href="./404.html" class="nav-link">Services</a>
+
+            <a href="./404.html" class="nav-link">Projects</a>
+
+            <!-- BLOG -->
+            <div class="nav-item has-sub relative">
+              <div class="flex items-center gap-0.5">
+                <a href="./404.html" class="nav-link">Blog</a>
+                <button class="submenu-toggle" aria-label="Open Blog submenu">
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+              </div>
+
+              <div
+                class="submenu absolute top-full left-0 mt-4 bg-white shadow-lg rounded-md w-48"
+              >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Blog Grid</a
+                >
+                <a href="./404.html" class="submenu-item block px-5 py-3"
+                  >Blog Single</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- CALL INFO -->
+          <div class="call-info hidden lg:flex items-center gap-3">
+            <a
+              href="./404.html"
+              class="call-icon w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white"
+            >
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <div class="text-sm">
+              <p class="font-medium">Call Anytime</p>
+              <p class="text-gray-500">017-50050088</p>
+            </div>
+          </div>
+
+          <!-- HAMBURGER -->
+          <button class="hamburger lg:hidden text-2xl" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- MOBILE VIEW -->
+        <div class="mobile-menu fixed inset-0 bg-white z-50 hidden">
+          <!-- TOP BAR -->
+          <div class="h-20 px-6 flex items-center justify-between">
+            <span class="text-lg font-semibold">STACKLY</span>
+            <button class="mobile-close text-2xl" aria-label="Close menu">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- NAV -->
+          <nav class="mobile-nav px-6 mt-8 flex flex-col gap-6">
+            <!-- HOME -->
+            <div class="mobile-item has-sub">
+              <div class="flex items-center justify-between">
+                <a href="./index.html" class="mobile-link">Home</a>
+                <button
+                  class="mobile-sub-toggle"
+                  aria-label="Toggle Home submenu"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div class="mobile-submenu">
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Home One</a
+                >
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Home Two</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="mobile-link">Pages</a>
+
+            <a href="./404.html" class="mobile-link">Services</a>
+
+            <a href="./404.html" class="mobile-link">Projects</a>
+
+            <!-- BLOG -->
+            <div class="mobile-item has-sub">
+              <div class="flex items-center justify-between">
+                <a href="./404.html" class="mobile-link">Blog</a>
+                <button
+                  class="mobile-sub-toggle"
+                  aria-label="Toggle Blog submenu"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div class="mobile-submenu">
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Blog Grid</a
+                >
+                <a href="./404.html" class="mobile-sublink block py-2"
+                  >Blog Single</a
+                >
+              </div>
+            </div>
+
+            <a href="./404.html" class="mobile-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HOME -->
+      <section class="hero-section relative bg-white mt-12 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto px-6 flex items-center pt-12 bg-gray-200/50"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center w-full"
+          >
+            <!-- LEFT CONTENT -->
+            <div class="hero-content">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-primary text-xl">*</span>
+                <span class="uppercase tracking-widest text-sm">
+                  Welcome to our creative solution
+                </span>
+              </div>
+
+              <h1
+                class="hero-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-6"
+              >
+                Innovative Design<br />
+                Inspire Growth &<br />
+                Success
+              </h1>
+
+              <p class="hero-text text-gray-600 max-w-xl mb-10">
+                We believe design is more than aesthetics—it's a powerful tool
+                to spark growth and success. By blending creativity with
+                strategy, we create innovative design solutions that capture
+                attention, connect with audiences.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-8">
+                <!-- CTA -->
+                <a
+                  href="./404.html"
+                  class="hero-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+                >
+                  Book A Consultation
+                  <span
+                    class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+
+                <!-- RATING -->
+                <div class="flex items-center gap-3">
+                  <i class="fa-brands fa-google text-xl"></i>
+                  <span class="text-xl font-bold">4.5</span>
+                  <div class="flex gap-1 text-primary">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-sm text-gray-500">(1000+ review)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="hero-image relative flex justify-center">
+              <img
+                src="./src/assets/home1.webp"
+                alt="Professional Woman"
+                class="max-w-md w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="agency-section max-w-7xl mx-auto py-24 overflow-hidden">
+        <div class="px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <!-- LEFT IMAGE COLLAGE -->
+          <div class="image-grid relative grid grid-cols-2 gap-6">
+            <img
+              src="./src/assets/a1.webp"
+              alt="a1"
+              class="rounded-3xl object-cover w-full h-full image-item row-span-2"
+            />
+
+            <img
+              src="./src/assets/a2.webp"
+              alt="a2"
+              class="rounded-3xl object-cover w-full h-full image-item"
+            />
+            <img
+              src="./src/assets/a3.webp"
+              alt="a3"
+              class="rounded-3xl object-cover w-full h-full image-item"
+            />
+
+            <!-- Circular Badge -->
+            <div
+              class="absolute inset-0 m-auto border-8 border-white bg-primary w-40 h-40 flex items-center justify-center rounded-full"
+            >
+              <svg class="badge-circle w-full h-full" viewBox="0 0 200 200">
+                <!-- Circle path -->
+                <defs>
+                  <path
+                    id="textCirclePath"
+                    d="
+          M 100, 100
+          m -75, 0
+          a 75,75 0 1,1 150,0
+          a 75,75 0 1,1 -150,0
+        "
+                  />
+                </defs>
+
+                <!-- Rounded text -->
+                <text
+                  fill="white"
+                  font-size="14"
+                  font-weight="600"
+                  letter-spacing="2"
+                >
+                  <textPath
+                    href="#textCirclePath"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    CREATIVE AGENCY • CREATIVE AGENCY • CREATIVE • GE
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="content-wrap space-y-8">
+            <span
+              class="uppercase tracking-widest text-sm text-primary font-semibold content-tag"
+            >
+              About Our Company
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight content-title"
+            >
+              We Deliver Innovative Ideas To Elevate Your Digital Agency.
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed max-w-xl content-text">
+              Nullam nec ligula a enim dictum sagittis id quis est. Sed in
+              tempus leo. Maecenas ut metus vitae risus lacinia ullamcorper.
+              Aenean eleifend pellentesque sem vitae congue.
+            </p>
+
+            <!-- Experience Card -->
+            <div
+              class="flex items-center gap-4 bg-white rounded-2xl p-6 shadow-sm experience-card"
+            >
+              <div
+                class="w-12 h-12 bg-primary rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-award text-white text-xl"></i>
+              </div>
+              <p class="font-semibold">
+                We have more than 50+ year of services experience
+              </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="flex flex-wrap items-center gap-6 cta-group">
+              <a
+                href="./404.html"
+                class="hero-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+              >
+                Discover More
+                <span
+                  class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+
+              <a
+                href="./404.html"
+                class="items-center gap-3 phone-btn px-6 py-5 rounded-full border inline-block w-fit"
+              >
+                <i class="fa-solid fa-phone"></i>
+                <span class="font-semibold">017-50050088</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="bg-white text-black py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Heading -->
+          <div class="text-center mb-16 gsap-heading">
+            <div
+              class="flex justify-center items-center gap-2 text-primary text-sm font-semibold mb-4"
+            >
+              <span class="w-2 h-2 bg-primary rounded-full"></span>
+              OUR SERVICE
+            </div>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight"
+            >
+              COMPLETE SERVICE TO ELEVATE <br />
+              YOUR BRAND
+            </h2>
+          </div>
+
+          <!-- Main Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- LEFT -->
+            <div class="space-y-6 gsap-left">
+              <!-- Item -->
+              <div
+                class="service-item service-active flex items-center justify-between rounded-2xl px-10 py-10 cursor-pointer bg-primary text-white"
+                data-service="branding"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-pen-nib text-xl"></i>
+                  <div>
+                    <h4 class="font-bold uppercase">Branding & Identity</h4>
+                    <p class="text-sm opacity-70">Design Innovation</p>
+                  </div>
+                </div>
+                <span
+                  class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+
+              <div
+                class="service-item flex items-center justify-between rounded-2xl px-10 py-10 cursor-pointer bg-gray-200/50"
+                data-service="strategy"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-bullseye text-xl"></i>
+                  <div>
+                    <h4 class="font-bold uppercase">Creative Strategy</h4>
+                    <p class="text-sm opacity-70">Growth Planning</p>
+                  </div>
+                </div>
+                <span
+                  class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+
+              <div
+                class="service-item flex items-center justify-between rounded-2xl px-10 py-10 cursor-pointer bg-gray-200/50"
+                data-service="content"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-photo-film text-xl"></i>
+                  <div>
+                    <h4 class="font-bold uppercase">Content Creation</h4>
+                    <p class="text-sm opacity-70">Digital Campaigns</p>
+                  </div>
+                </div>
+                <span
+                  class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+
+              <div
+                class="service-item flex items-center justify-between rounded-2xl px-10 py-10 cursor-pointer bg-gray-200/50"
+                data-service="marketing"
+              >
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-chart-line text-xl"></i>
+                  <div>
+                    <h4 class="font-bold uppercase">Campaign Management</h4>
+                    <p class="text-sm opacity-70">Performance Marketing</p>
+                  </div>
+                </div>
+                <span
+                  class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="relative gsap-right">
+              <div class="rounded-3xl bg-gray-200/50 p-5">
+                <img
+                  id="serviceImage"
+                  src="./src/assets/s1.webp"
+                  alt="services"
+                  class="rounded-2xl w-full h-82 object-cover mb-6"
+                />
+
+                <h3 id="serviceTitle" class="text-xl font-bold mb-3 uppercase">
+                  Branding & Identity
+                </h3>
+
+                <p id="serviceDesc" class="text-neutral-400 mb-6">
+                  We build strong digital identities that connect emotionally
+                  with audiences, combining strategy, design, and innovation.
+                </p>
+
+                <a
+                  href="./404.html"
+                  class="hero-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white w-fit"
+                >
+                  View Details
+                  <span
+                    class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section
+        class="relative max-w-7xl mx-auto overflow-hidden bg-tertiary py-28"
+      >
+        <div class="px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <!-- LEFT CONTENT -->
+          <div class="why-left gsap-why-left text-white">
+            <span
+              class="text-primary text-sm font-semibold tracking-widest uppercase flex items-center gap-3 mb-6"
+            >
+              WHY CHOOSE US
+              <span class="w-10 h-0.5 bg-primary"></span>
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
+            >
+              WHY YOU SHOULD <br />
+              CHOOSE THIS <br />
+              COMPANY?
+            </h2>
+
+            <p class="text-white/70 max-w-lg mb-8">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+
+            <div class="flex items-center gap-6 mb-10">
+              <div
+                class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white"
+              >
+                <i class="fa-solid fa-sack-dollar text-xl"></i>
+              </div>
+
+              <div>
+                <h4 class="font-bold">Less Pay Get More Benefits</h4>
+                <p class="text-white/60 text-sm">
+                  The point using Lorem Ipsum is that it has a more.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="./404.html"
+              class="hero-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white w-fit"
+            >
+              GET IN TOUCH
+              <span
+                class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+
+          <!-- RIGHT VISUAL -->
+          <div
+            class="relative why-right gsap-why-right flex justify-center items-center"
+          >
+            <div class="w-full h-full rounded-2xl">
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="./src/assets/w2.webp"
+                alt="why"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- STATS -->
+        <div
+          class="stats-row grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 text-center mt-20 text-white max-w-7xl mx-auto w-full"
+        >
+          <div class="stat-item">
+            <h3 class="text-5xl font-extrabold stat-number" data-value="80000">
+              0
+            </h3>
+            <p class="uppercase text-sm opacity-70">Worldwide Business</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="text-5xl font-extrabold stat-number" data-value="100000">
+              0
+            </h3>
+            <p class="uppercase text-sm opacity-70">Satisfied Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="text-5xl font-extrabold stat-number" data-value="70000">
+              0
+            </h3>
+            <p class="uppercase text-sm opacity-70">Countries Served</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="text-5xl font-extrabold stat-number" data-value="250000">
+              0
+            </h3>
+            <p class="uppercase text-sm opacity-70">Award Winning</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAMS -->
+      <section
+        class="team-section py-24 bg-gray-200/50 max-w-7xl mx-auto overflow-hidden"
+      >
+        <div class="px-6">
+          <!-- HEADER -->
+          <div
+            class="team-header mb-16 flex flex-wrap gap-8 items-center justify-between"
+          >
+            <div>
+              <span
+                class="uppercase tracking-widest text-sm text-yellow-500 font-semibold"
+              >
+                Our Team
+              </span>
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4 leading-tight"
+              >
+                What Success Looks<br />From The Back
+              </h2>
+            </div>
+
+            <div class="h-full mt-auto">
+              <a
+                href="./404.html"
+                class="hero-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+              >
+                View All Members
+                <span
+                  class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- TEAM WRAP -->
+          <div
+            class="relative team-wrap grid grid-cols-1 mdx:grid-cols-2 lg:grid-cols-3 gap-12 items-start"
+          >
+            <!-- CARD -->
+            <div class="team-card bg-white rounded-3xl p-6">
+              <div class="relative rounded-2xl overflow-hidden mb-6">
+                <img
+                  src="./src/assets/t1.webp"
+                  alt="t1"
+                  class="w-full h-72 object-cover"
+                />
+                <a
+                  href="./404.html"
+                  class="team-plus absolute bottom-4 right-4 bg-black w-9 h-9 rounded-full flex items-center justify-center text-white transition-all"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <h4 class="font-bold text-lg">Jenny Wilson</h4>
+              <p class="text-sm text-gray-500">UX Designer, Research</p>
+            </div>
+
+            <!-- CARD -->
+            <div class="team-card bg-white rounded-3xl p-6">
+              <div class="relative rounded-2xl overflow-hidden mb-6">
+                <img
+                  src="./src/assets/t2.webp"
+                  alt="t2"
+                  class="w-full h-72 object-cover"
+                />
+                <a
+                  href="./404.html"
+                  class="team-plus absolute bottom-4 right-4 bg-black w-9 h-9 rounded-full flex items-center justify-center text-white transition-all"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <h4 class="font-bold text-lg">Wade Warren</h4>
+              <p class="text-sm text-gray-500">UX Designer, Research</p>
+            </div>
+
+            <!-- CARD -->
+            <div class="team-card bg-white rounded-3xl p-6">
+              <div class="relative rounded-2xl overflow-hidden mb-6">
+                <img
+                  src="./src/assets/t3.webp"
+                  alt="t3"
+                  class="w-full h-72 object-cover"
+                />
+                <a
+                  href="./404.html"
+                  class="team-plus absolute bottom-4 right-4 bg-black w-9 h-9 rounded-full flex items-center justify-center text-white transition-all"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </a>
+              </div>
+              <h4 class="font-bold text-lg">Leslie Alexander</h4>
+              <p class="text-sm text-gray-500">UX Designer, Research</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS PROCESS -->
+      <section class="stats-process-section py-24">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- TITLE -->
+          <div class="text-center mb-20">
+            <span class="uppercase tracking-widest text-primary text-sm"
+              >Working Process</span
+            >
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4">
+              Our Work Process<br />In 3 Easy Steps
+            </h2>
+          </div>
+
+          <!-- PROCESS -->
+          <div
+            class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 process-wrap"
+          >
+            <!-- STEP 1 -->
+            <div class="process-card text-center">
+              <div
+                class="relative inline-flex items-center justify-center mb-6"
+              >
+                <span
+                  class="absolute -top-2 -left-2 bg-[#1e233d] text-white text-xs px-2 py-2 rounded-full"
+                  >01</span
+                >
+                <div
+                  class="w-28 h-28 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-list-check text-2xl text-black"></i>
+                </div>
+              </div>
+              <h4 class="text-xl font-bold mb-2">Choose Service</h4>
+              <p class="opacity-70 text-sm">
+                In a free hour, when our power of choice is untrammeled.
+              </p>
+            </div>
+
+            <!-- SVG ARROW -->
+            <svg
+              class="absolute hidden lg:block top-24 left-1/3 arrow-svg"
+              width="120"
+              height="60"
+            >
+              <path
+                d="M10 30 C 40 0, 80 60, 110 30"
+                fill="none"
+                stroke="#f97316"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <!-- STEP 2 -->
+            <div class="process-card text-center">
+              <div
+                class="relative inline-flex items-center justify-center mb-6"
+              >
+                <span
+                  class="absolute -top-2 -left-2 bg-[#1e233d] text-white text-xs px-2 py-2 rounded-full"
+                  >02</span
+                >
+                <div
+                  class="w-28 h-28 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-bullhorn text-2xl text-black"></i>
+                </div>
+              </div>
+              <h4 class="text-xl font-bold mb-2">Start Optimizing</h4>
+              <p class="opacity-70 text-sm">
+                In a free hour, when our power of choice is untrammeled.
+              </p>
+            </div>
+
+            <!-- SVG ARROW -->
+            <svg
+              class="absolute hidden lg:block top-24 right-1/3 arrow-svg"
+              width="120"
+              height="60"
+            >
+              <path
+                d="M10 30 C 40 0, 80 60, 110 30"
+                fill="none"
+                stroke="#f97316"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <!-- STEP 3 -->
+            <div class="process-card text-center">
+              <div
+                class="relative inline-flex items-center justify-center mb-6"
+              >
+                <span
+                  class="absolute -top-2 -left-2 bg-[#1e233d] text-white text-xs px-2 py-2 rounded-full"
+                  >03</span
+                >
+                <div
+                  class="w-28 h-28 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-gear text-2xl text-black"></i>
+                </div>
+              </div>
+              <h4 class="text-xl font-bold mb-2">Launch Now</h4>
+              <p class="opacity-70 text-sm">
+                In a free hour, when our power of choice is untrammeled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOGS -->
+      <section class="blog-section py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- HEADER -->
+          <div
+            class="mb-16 blog-header flex flex-wrap items-center justify-between gap-8"
+          >
+            <div>
+              <span
+                class="uppercase tracking-widest text-sm text-primary font-semibold"
+              >
+                From The Blog
+              </span>
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mt-4">
+                News & Articles
+              </h2>
+            </div>
+
+            <div class="h-full mt-auto">
+              <a
+                href="./404.html"
+                class="hero-btn w-fit flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+              >
+                View More
+                <span
+                  class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- BLOG GRID -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 blog-grid"
+          >
+            <!-- CARD -->
+            <article class="blog-card bg-white rounded-3xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="./src/assets/b1.webp"
+                  alt="b1"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute top-5 right-5 bg-primary text-white text-xs font-bold px-4 py-2 rounded-lg date-badge flex flex-col justify-center items-center"
+                >
+                  <p>03</p>
+                  <p>JUN</p>
+                </div>
+              </div>
+
+              <div class="p-8 space-y-4">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fa-regular fa-user"></i> By Rimon</span>
+                  <span><i class="fa-solid fa-tag"></i> AI Content</span>
+                </div>
+
+                <h3 class="text-xl font-bold leading-snug">
+                  Web Development Essentials Every Business
+                </h3>
+
+                <div
+                  class="flex items-center justify-between pt-4 border-t text-sm text-gray-500"
+                >
+                  <a
+                    href="./404.html"
+                    class="read-more flex items-center gap-2 text-primary font-semibold"
+                  >
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <span><i class="fa-regular fa-comment"></i> No Comments</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD -->
+            <article class="blog-card bg-white rounded-3xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="./src/assets/b2.webp"
+                  alt="b2"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute top-5 right-5 bg-primary text-white text-xs font-bold px-4 py-2 rounded-lg date-badge flex flex-col justify-center items-center"
+                >
+                  <p>02</p>
+                  <p>JUN</p>
+                </div>
+              </div>
+
+              <div class="p-8 space-y-4">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fa-regular fa-user"></i> By Rimon</span>
+                  <span><i class="fa-solid fa-tag"></i> AI Technology</span>
+                </div>
+
+                <h3 class="text-xl font-bold leading-snug">
+                  How AI is Revolutionizing Web Development
+                </h3>
+
+                <div
+                  class="flex items-center justify-between pt-4 border-t text-sm text-gray-500"
+                >
+                  <a
+                    href="./404.html"
+                    class="read-more flex items-center gap-2 text-primary font-semibold"
+                  >
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <span><i class="fa-regular fa-comment"></i> No Comments</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD -->
+            <article class="blog-card bg-white rounded-3xl overflow-hidden">
+              <div class="relative">
+                <img
+                  src="./src/assets/b3.webp"
+                  alt="b3"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute top-5 right-5 bg-primary text-white text-xs font-bold px-4 py-2 rounded-lg date-badge flex flex-col justify-center items-center"
+                >
+                  <p>01</p>
+                  <p>JUN</p>
+                </div>
+              </div>
+
+              <div class="p-8 space-y-4">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                  <span><i class="fa-regular fa-user"></i> By Kamrul</span>
+                  <span><i class="fa-solid fa-tag"></i> UI Design</span>
+                </div>
+
+                <h3 class="text-xl font-bold leading-snug">
+                  Effective Hashtag Strategies to Increase Reach
+                </h3>
+
+                <div
+                  class="flex items-center justify-between pt-4 border-t text-sm text-gray-500"
+                >
+                  <a
+                    href="./404.html"
+                    class="read-more flex items-center gap-2 text-primary font-semibold"
+                  >
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <span><i class="fa-regular fa-comment"></i> No Comments</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        class="client-feedback-section py-24 max-w-7xl mx-auto bg-gray-200/50 overflow-hidden"
+      >
+        <div class="px-6 gap-16 items-start">
+          <!-- LEFT CONTENT -->
+          <div
+            class="feedback-left h-full flex flex-wrap items-center justify-between gap-8"
+          >
+            <div class="space-y-4">
+              <span
+                class="inline-block px-4 py-1 border rounded-full text-xs tracking-widest text-gray-600"
+              >
+                CLIENT FEEDBACK
+              </span>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight"
+              >
+                WHAT OUR CLIENTS<br />SAY ABOUT DIGENCE
+              </h2>
+
+              <p class="text-gray-600 max-w-md leading-relaxed">
+                We combine strategic thinking, performance-driven execution, and
+                transparent communication to help businesses grow faster and
+                smarter in the digital landscape.
+              </p>
+            </div>
+
+            <div class="h-full mt-auto">
+              <a
+                href="./404.html"
+                class="hero-btn view-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+              >
+                View All Testimonial
+                <span
+                  class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT TESTIMONIALS -->
+          <div
+            class="feedback-right grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
+          >
+            <!-- CARD -->
+            <div
+              class="feedback-card bg-white rounded-2xl p-4 md:p-6 flex flex-col gap-8 items-start"
+            >
+              <div class="relative shrink-0 w-full">
+                <img
+                  src="./src/assets/tes1.webp"
+                  alt="tes1"
+                  class="w-full h-72 rounded-xl object-cover object-top"
+                />
+                <a
+                  href="./404.html"
+                  class="play-btn absolute inset-0 m-auto w-12 h-12 rounded-full bg-white flex items-center justify-center shadow"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="space-y-4">
+                <div class="text-primary/80">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed">
+                  “Digence helped us scale our lead generation while cutting
+                  costs. Their strategy was sharp, their team is good digital
+                  agency responsive, and the performance results were real.”
+                </p>
+
+                <div>
+                  <h4 class="font-bold">Brandon John</h4>
+                  <p class="text-sm text-gray-500">CEO, TeamTalk</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="feedback-card bg-white rounded-2xl p-4 md:p-6 flex flex-col gap-8 items-start"
+            >
+              <div class="relative shrink-0 w-full">
+                <img
+                  src="./src/assets/tes2.webp"
+                  alt="tes2"
+                  class="w-full h-72 rounded-xl object-cover object-top"
+                />
+                <a
+                  href="./404.html"
+                  class="play-btn absolute inset-0 m-auto w-12 h-12 rounded-full bg-white flex items-center justify-center shadow cursor-pointer"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="space-y-4">
+                <div class="text-primary/80">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed">
+                  “From day one, they felt like part of our team. The creatives
+                  were on point and our engagement has digital marketing agency
+                  never looked better and good to go with.”
+                </p>
+
+                <div>
+                  <h4 class="font-bold">Julia Tandra</h4>
+                  <p class="text-sm text-gray-500">CEO, TeamTalk</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div
+              class="feedback-card bg-white rounded-2xl p-4 md:p-6 flex flex-col gap-8 items-start"
+            >
+              <div class="relative shrink-0 w-full">
+                <img
+                  src="./src/assets/testbg.webp"
+                  alt="tes3"
+                  class="w-full h-72 rounded-xl object-cover object-top bg-gray-200/50"
+                />
+                <a
+                  href="./404.html"
+                  class="play-btn absolute inset-0 m-auto w-12 h-12 rounded-full bg-white flex items-center justify-center shadow cursor-pointer"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+
+              <div class="space-y-4">
+                <div class="text-primary/80">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed">
+                  “our engagement has digital marketing agency never looked
+                  better and good to go with. From day one, they felt like part
+                  of our team. The creatives were on point ”
+                </p>
+
+                <div>
+                  <h4 class="font-bold">Jenilia Singh</h4>
+                  <p class="text-sm text-gray-500">CEO, TeamTalk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT US -->
+      <section class="relative bg-tertiary py-28 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+        >
+          <!-- LEFT -->
+          <div class="contact-left gsap-contact-left text-white">
+            <span
+              class="flex items-center gap-4 text-primary text-sm font-semibold uppercase mb-6"
+            >
+              WHY CHOOSE US
+              <span class="w-10 h-0.5 bg-primary"></span>
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-10"
+            >
+              Recognized As One <br />
+              Of The Leading <br />
+              Company!
+            </h2>
+
+            <!-- Contact Items -->
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-black"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="text-white/70">company@gmail.com</p>
+                  <p class="text-white/70">+00 (2200) - 2222</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-black"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="text-white/70">
+                    90 Washington, mg <br />
+                    Manchester, Kentucky USA
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div
+            class="contact-form gsap-contact-form relative bg-white rounded-3xl shadow-2xl p-5 md:p-10"
+          >
+            <p class="text-sm font-semibold mb-2">Contact Us</p>
+            <h3 class="text-3xl font-extrabold mb-8">Get in Touch</h3>
+
+            <form id="contactForm" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  required
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full bg-gray-100 px-4 py-3 rounded-md outline-none"
+                />
+                <input
+                  required
+                  type="email"
+                  id="emailField"
+                  placeholder="Email Address"
+                  class="w-full bg-gray-100 px-4 py-3 rounded-md outline-none"
+                />
+                <input
+                  required
+                  type="text"
+                  placeholder="Enter Subject"
+                  class="w-full bg-gray-100 px-4 py-3 rounded-md outline-none"
+                />
+                <input
+                  required
+                  type="tel"
+                  placeholder="Enter Phone"
+                  class="w-full bg-gray-100 px-4 py-3 rounded-md outline-none"
+                />
+              </div>
+
+              <textarea
+                required
+                placeholder="Write a Message"
+                class="w-full bg-gray-100 px-4 py-3 rounded-md outline-none h-32 resize-none"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="send-btn bg-primary px-8 py-4 font-bold text-white cursor-pointer"
+              >
+                SEND A MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="bg-gray-200/50 py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- HEADER -->
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 faq-header gsap-faq-header"
+          >
+            <div>
+              <span
+                class="inline-block px-4 py-1 border border-black/20 rounded-full text-xs tracking-widest uppercase mb-6"
+              >
+                Common Questions
+              </span>
+
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight"
+              >
+                Answers To Your <br />
+                Marketing Questions
+              </h2>
+            </div>
+
+            <a
+              href="./404.html"
+              class="hero-btn view-btn flex items-center gap-3 px-6 py-3 rounded-full bg-primary text-white"
+            >
+              Contact Us
+              <span
+                class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+
+          <!-- FAQ GRID -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 faq-grid gsap-faq-grid"
+          >
+            <!-- LEFT COLUMN -->
+            <div class="space-y-4">
+              <!-- Item -->
+              <div
+                class="faq-item active-faq bg-white rounded-xl p-6 cursor-pointer"
+              >
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  What digital marketing services do you offer?
+                  <i class="faq-icon fa-solid fa-minus"></i>
+                </div>
+                <div class="faq-answer mt-4 text-gray-600">
+                  We provide SEO, paid advertising, social media marketing,
+                  content creation, conversion rate optimization, email
+                  campaigns, and full-funnel digital growth strategies tailored
+                  to your business goals.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  How does your marketing process work?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  We start with research and audits, define strategy, execute
+                  campaigns, continuously optimize performance, and deliver
+                  transparent reports with measurable KPIs.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  Which industries do you specialize in?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  We work with SaaS, eCommerce, startups, healthcare, fintech,
+                  real estate, and service-based businesses looking to scale
+                  digitally.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  How long does it take to see results?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  Paid campaigns can show results within weeks, while SEO and
+                  organic growth typically take 2–4 months depending on
+                  competition and strategy.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  Is a long-term contract required?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  No long-term lock-ins. We offer flexible monthly plans focused
+                  on performance and results, not forced commitments.
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="space-y-4">
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  How are pricing plans structured?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  Pricing is based on your goals, platforms, ad spend, and level
+                  of support. We offer transparent packages with no hidden
+                  costs.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  Do you provide performance reporting?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  Yes. You receive detailed reports covering traffic,
+                  conversions, ROI, engagement metrics, and ongoing optimization
+                  insights.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  Who manages my marketing campaigns?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  A dedicated digital marketing manager and specialized experts
+                  handle strategy, execution, optimization, and communication.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  Can services be customized?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  Absolutely. Every campaign is tailored to your industry,
+                  audience, objectives, and budget for maximum impact.
+                </div>
+              </div>
+
+              <div class="faq-item bg-white rounded-xl p-6 cursor-pointer">
+                <div
+                  class="faq-question flex justify-between items-center font-bold"
+                >
+                  What tools and platforms do you use?
+                  <i class="faq-icon fa-solid fa-plus"></i>
+                </div>
+                <div class="faq-answer hidden mt-4 text-gray-600">
+                  We use Google Analytics, Google Ads, Meta Ads, HubSpot,
+                  SEMrush, Ahrefs, Hotjar, and advanced automation tools to
+                  drive results.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="mark-footer bg-secondary text-white pt-24">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- TOP GRID -->
+          <div
+            class="footer-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 pb-16"
+          >
+            <!-- BRAND -->
+            <div class="footer-brand space-y-6">
+              <div
+                class="flex items-center gap-3 text-lg font-extrabold text-primary"
+              >
+                STACKLY
+              </div>
+              <p class="text-gray-300 leading-relaxed max-w-sm">
+                Built on measurable results and strategic thinking, we combine
+                performance marketing, brand strategy, and advanced analytics to
+                deliver growth that matters — not vanity metrics.
+              </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-col">
+              <h4 class="text-lg font-semibold mb-6 text-primary">
+                Quick Links
+              </h4>
+              <ul class="space-y-4 text-gray-300">
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Homepage
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  About Us
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Our Services
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Projects Work
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Contact Us
+                </a>
+              </ul>
+            </div>
+
+            <!-- DIGITAL MARKETING -->
+            <div class="footer-col">
+              <h4 class="text-lg font-semibold mb-6 text-primary">
+                Digital Marketing
+              </h4>
+              <ul class="space-y-4 text-gray-300">
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Concepts Design
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Growth Business
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Strategy
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Influence Marketing
+                </a>
+                <a
+                  href="./404.html"
+                  class="footer-link flex items-center gap-3"
+                >
+                  Freelance Hire
+                </a>
+              </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-col space-y-6">
+              <h4 class="text-lg font-semibold text-primary">
+                Stay Tuned With Us
+              </h4>
+
+              <div class="flex items-center gap-4 text-gray-300">
+                <i class="fa-solid fa-map"></i>
+                <span
+                  >Lumbung Hidup St. 423 Block ABCD East Java Indonesia</span
+                >
+              </div>
+
+              <div class="flex items-center gap-4 text-gray-300">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@example</span>
+              </div>
+
+              <div class="flex items-center gap-4 text-gray-300">
+                <i class="fa-solid fa-phone"></i>
+                <span>123 456 789</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIVIDER -->
+          <div
+            class="border-t border-white/10 py-8 flex flex-col md:flex-row justify-between items-center gap-6"
+          >
+            <p class="text-gray-400 text-sm">
+              ©copyrights stackly 2026 - All rights Reserved.
+            </p>
+
+            <!-- SOCIAL -->
+            <div class="flex gap-4 footer-social">
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="./404.html" class="social-btn">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js"></script>
+  </body>
+</html>

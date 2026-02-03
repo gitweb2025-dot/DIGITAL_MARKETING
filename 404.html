@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Stackly Digital Marketing Agency | SEO, PPC & Growth Marketing
+    </title>
+
+    <meta
+      name="description"
+      content="Results-driven digital marketing agency specializing in SEO, PPC, social media, and conversion optimization. Grow traffic, leads, and revenue."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Stackly" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Stackly Digital Marketing Agency | SEO, PPC & Growth Marketing"
+    />
+    <meta
+      property="og:description"
+      content="Results-driven digital marketing agency specializing in SEO, PPC, social media, and conversion optimization. Grow traffic, leads, and revenue."
+    />
+    <meta property="og:site_name" content="Stackly" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+     <link rel="stylesheet" href="./dist/output.css">
+
+    <style>
+      /* ONLY hover effects */
+      .primary-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .secondary-btn:hover {
+        transform: translateX(4px);
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[#0b0f1a] text-white min-h-screen flex items-center justify-center"
+  >
+    <section class="error-section w-full overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto min-h-screen  px-6 gap-20 flex items-center justify-center" 
+      >
+        <!-- LEFT CONTENT -->
+        <div class="error-content space-y-8 w-full text-center">
+          <span class="uppercase tracking-widest text-sm text-primary">
+            Error 404
+          </span>
+
+          <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
+            Page Not<br />Found
+          </h1>
+
+          <p class="text-gray-400 leading-relaxed">
+            The page you’re looking for doesn’t exist or has been moved. Let’s
+            get you back on track.
+          </p>
+
+          <div class="flex flex-wrap justify-center items-center gap-6">
+            <a
+              href="/"
+              class="primary-btn bg-primary text-black font-semibold px-8 py-4 rounded-full transition-all"
+            >
+              Go to Homepage
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT VISUAL -->
+        <div class="error-visual absolute inset-0 flex items-center justify-center ">
+          <div
+            class="error-glow absolute w-72 h-72 bg-primary/20 rounded-full blur-3xl"
+          ></div>
+
+          <div
+            class="error-code text-[160px] font-extrabold text-white/5 select-none"
+          >
+            404
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // GSAP ENTRY (clean, SaaS-level)
+      gsap.from(".error-content > *", {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.12,
+        ease: "power3.out",
+      });
+
+      gsap.from(".error-code", {
+        scale: 0.8,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+      });
+    </script>
+  </body>
+</html>

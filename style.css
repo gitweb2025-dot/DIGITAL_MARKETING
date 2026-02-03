@@ -1,0 +1,64 @@
+/* NAVBAR CSS */
+
+.nav-link:hover,
+.submenu-item:hover,
+.mobile-link:hover {
+  color: #f97316;
+}
+
+/* HOME CSS */
+
+.hero-btn:hover {
+  background-color: #ea580c;
+}
+
+.hero-btn span {
+  transition: transform 0.3s ease;
+}
+
+.hero-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* ABOUT CSS */
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.phone-btn{
+  transition: all 0.3s ease;
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); */
+}
+
+.phone-btn:hover {
+  background-color: #f97316;
+  color: white;
+}
+
+/* FOOTER CSS  */
+
+.footer-link {
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+  transform: translateX(6px);
+  color: #f97316;
+}
+
+.social-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #f97316;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+}
